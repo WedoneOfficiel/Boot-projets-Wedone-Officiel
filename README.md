@@ -2,9 +2,9 @@
 
 Une adaptation de Windows 8.1 pour le Web !!
 
-Adresse de la version web : - [Windows Web 8 Live](https://wedoneofficiel.github.io/Windows-8.1-pour-le-web/) link.
+Adresse de la version web : [Windows Web 8 Live](https://wedoneofficiel.github.io/Windows-8.1-pour-le-web/) link.
 
 
-### What it really is?
+## Qu'est-ce que c'est vraiment ? 
 
-*Online design mockup of the Microsoft Windows 8*. Coded using HTML5, CSS3, SASS built-in functions and jQuery to create a perfect pixel web mockup of the Microsoft Windows 8 Operating System. The project features boot screen, login screen, desktop, start menu, apps and a complete real-time experience of Windows 8 OS.
+Maquette de conception en ligne de Microsoft Windows 8.1. Codée à l'aide des fonctions intégrées HTML5, CSS3, SASS et jQuery pour créer une maquette Web pixel parfaite du système d'exploitation Microsoft Windows 8.1. Le projet comprend un écran de démarrage, un écran de connexion, un bureau, un menu de démarrage, des applications et une expérience complète en temps réel du système d'exploitation Windows 8.1.
