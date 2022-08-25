@@ -1,8 +1,8 @@
 # Windows 8.1 pour le web
 
-Simply put: it's Windows 8 in a browser.
+Une adaptation de Windows 8.1 pour le Web !!
 
-Check it out yourself - [Windows Web 8 Live](https://wedoneofficiel.github.io/Windows-8.1-pour-le-web/) link.
+Adresse de la version web : - [Windows Web 8 Live](https://wedoneofficiel.github.io/Windows-8.1-pour-le-web/) link.
 
 
 ### What it really is?
