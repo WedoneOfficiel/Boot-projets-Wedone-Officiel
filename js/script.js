@@ -309,7 +309,7 @@ $(document).ready(function() {
         }
         else {
             $('.password-holder').hide();
-            $('.error-box .error-msg').html('The password is incorrect. Try Again');
+            $('.error-box .error-msg').html('Le mot de passe est incorrect. Veuillez réessayer');
             $('.error-box').fadeIn(function() {
                 document.getElementById('windows-error-audio').play();
             });
