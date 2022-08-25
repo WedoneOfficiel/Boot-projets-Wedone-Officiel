@@ -2,7 +2,7 @@
 
 Une adaptation de Windows 8.1 pour le Web !!
 
-Adresse de la version web : [Windows Web 8 Live](https://wedoneofficiel.github.io/Windows-8.1-pour-le-web/) link.
+Adresse de la version web : [Windows 8.1 pour le Web](https://wedoneofficiel.github.io/Windows-8.1-pour-le-web/).
 
 
 ## Qu'est-ce que c'est vraiment ? 
