@@ -33,14 +33,7 @@ $(document).ready(function() {
         d = new Date();
         
         hours = d.getHours();
-        if(hours >= 12) {
-            hours -= 12;
-            suffix = "PM";
-        }
-        else
-            suffix = "AM";
-        if(hours == 0)
-            hours = 12;
+        
         
         min = d.getMinutes();
         if(min < 10)
@@ -53,14 +46,20 @@ $(document).ready(function() {
         list_months = ["Janvie", "Fevrier", "Mars", "Apvril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Decembre"];
         monthNum = d.getMonth();
         monthName = list_months[monthNum];
+
         
         date = d.getDate();
         
         $('.logon-splash-screen .time').html(hours + ":" + min);
-        $('.logon-splash-screen .date').html(dayName + ", " + date + " " + monthName);
-        
-        $('.taskbar .time').html(hours + ":" + min + " " + suffix);
+        $('.logon-splash-screen .date').html(dayName + " " + date + " " + monthName);
+
+        $('.taskbar .time').html(hours + ":" + min + " ");
         $('.taskbar .date').html(date + "/" + (monthNum+1) + "/" + d.getFullYear());
+        if(monthNum < 10) {
+            
+        }
+        else
+            $('.taskbar .date').html(date + "/" + (monthNum+1) + "/" + d.getFullYear());
         
         $('.charms-info .time').html(hours + ":" + min);
         $('.charms-info .date').html(dayName + "<br>" + date + " " + monthName);
