@@ -1,0 +1,408 @@
+<!-- The MIT License (MIT)
+
+Copyright (c) Wed Jun 17 2015 Kishlaya
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORTOR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="MobileOptimized" content="320">
+        <meta http-equiv="cleartype" content="on">
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Windows Web 8.1 | Wedone" />
+        <meta property="og:description" content="Windows 8.1 pour le web" />
+        <meta property="og:url" content="" />
+        <meta property="og:site_name" content="Windows Web 8.1" />
+        <meta property="og:image" content="img/logo.png" />
+        <title>Windows 8.1 pour le Web</title>
+        <link rel="icon" type="image/x-icon" href="img/logo.png">
+        <link rel="apple-touch-icon" href="img/logo.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="img/logo.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="img/logo.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="img/logo.png" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" type="text/css" rel="stylesheet" lang="en">
+        <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css" rel="stylesheet" lang="en">
+        <link href="css/main.min.css" type="text/css" rel="stylesheet" lang="en">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js" type="text/javascript"></script>
+        <script src="js/script.js" type="text/javascript"></script>
+    </head>
+    <body>        
+        <!-- BOOT -->
+        <div class="boot-screen">
+            <img src="img/logo.png" class="boot-logo">
+            <div class="loader">
+                <div class="wBall" id="wBall_1">
+                    <div class="wInnerBall"></div>
+                </div>
+                <div class="wBall" id="wBall_2">
+                    <div class="wInnerBall"></div>
+                </div>
+                <div class="wBall" id="wBall_3">
+                    <div class="wInnerBall"></div>
+                </div>
+                <div class="wBall" id="wBall_4">
+                    <div class="wInnerBall"></div>
+                </div>
+                <div class="wBall" id="wBall_5">
+                    <div class="wInnerBall"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- LOGON -->
+        <div class="logon-splash-screen">
+            <div class="date-time">
+                <p class="time"></p>
+                <p class="date"></p>
+            </div>
+            <div class="icon-set">
+                <p><i class="ionicons ion-connection-bars"></i></p>
+                <p><i class="ionicons ion-battery-half"></i></p>
+            </div>
+        </div>
+        
+        <div class="user-logon-screen">
+            <div class="user-info">
+                <a href="#" class="back" data-tooltip="Changer d'utilisateur"><i class="ionicons ion-arrow-left-c"></i></a>
+                <img class="profile-picture" src="img/user.png">
+                <div class="details">
+                    <p class="name">Wedone Utilisateur</p>
+                    <p class="email">wedone@test.com</p>
+                    <p class="status">Vérouillé</p>
+                    <!-- PASSWORD -->
+                    <div class="password-holder">
+                        <input type="password" placeholder="Mot de passe" class="password-field" title="Password : admin" tabindex="1" autocomplete="off">
+                        <a href="#" class="enter-password" data-tooltip="Envoyer"><i class="ionicons ion-arrow-right-c"></i></a>
+                        <p>Le mot de passe est : admin</p>
+                    </div>
+                    <div class="caps-warning">
+                        <p class="error-msg">Caps Lock is on</p>
+                    </div>
+                    <!-- SUCCESS -->
+                    <div class="success-box">
+                        <div class="loader">
+                            <div class="wBall" id="wBall_1">
+                                <div class="wInnerBall"></div>
+                            </div>
+                            <div class="wBall" id="wBall_2">
+                                <div class="wInnerBall"></div>
+                            </div>
+                            <div class="wBall" id="wBall_3">
+                                <div class="wInnerBall"></div>
+                            </div>
+                            <div class="wBall" id="wBall_4">
+                                <div class="wInnerBall"></div>
+                            </div>
+                            <div class="wBall" id="wBall_5">
+                                <div class="wInnerBall"></div>
+                            </div>
+                        </div>
+                        <p>Bienvenue</p>
+                    </div>
+                    <!-- ERROR -->
+                    <div class="error-box">
+                        <p class="error-msg"></p>
+                        <a href="#" class="btn-error" tabindex="2">OK</a>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-set">
+                <p data-tooltip="Options d'ergonomie"><i class="ionicons ion-loop"></i></p>
+                <p data-tooltip="Se connecter à internet"><i class="ionicons ion-connection-bars"></i></p>
+            </div>
+                <p data-tooltip="Arrêter" class="power-button"><i class="ionicons ion-power"></i></p>
+            <ul class="power-dropdown">
+                <li class="disabled">Mettre en veille</li>
+                <li class="shutdown">Arrêter</li>
+                <li class="restart">Redémarrer</li>
+            </ul>
+        </div>
+        
+        <!-- DESKTOP -->
+        <div class="desktop">
+           <div class="desktop-area">
+               <ul class="icon-grid-set medium-icons">
+                   <li class="brackets"><img src="img/iexplorer.png" alt="Brackets"><span class="icon-text">Internet Explorer</span></li>
+                   <li><i class="ionicons ion-trash-b" style="color:#ccc;"></i><span class="icon-text">Corbeille</span></li>
+                   <li><i class="ionicons ion-android-desktop" style="color:#def;"></i><span class="icon-text">Ordinateur</span></li>
+                   <li><i class="ionicons ion-folder" style="color:#f0e68c;"></i><span class="icon-text">Mes documents</span></li>
+               </ul>
+           </div>        
+        </div>
+        
+        <!-- TASKBAR -->
+        <div class="taskbar desktop-element">
+            <div class="start-button"><i class="ionicons ion-social-windows"></i></div>
+            <ul class="app-icon-set">
+                <li class="about active"><i class="ionicons ion-ios-keypad" style="color: #ff0033;"></i></li>
+                <li class="specifics active"><i class="ionicons ion-settings" style="color: #000;"></i></li>
+                <li class="copyright active"><i class="ionicons ion-ios-copy" style="color: #fff;"></i></li>
+            </ul>
+            <div class="charms-bar-activator-placer"></div>
+            <div class="date-time">
+               <p class="time"></p>
+               <p class="date"></p>
+            </div>
+            <ul class="notification-area">
+                <li title="Speakers: 100%"><i class="ionicons ion-android-volume-up"></i></li>
+                <li title="80% remaining"><i class="ionicons ion-battery-half"></i></li>
+                <li title="Internet Access"><i class="ionicons ion-connection-bars"></i></li>
+                <li title="Action Center"><i class="ionicons ion-flag"></i></li>
+                <li title="Onedrive: Files are up to date"><i class="ionicons ion-cloud"></i></li>
+            </ul>
+        </div>
+        
+        <!-- CHARMS BAR -->
+        <ul class="charms-bar">
+            <li><i class="ionicons ion-ios-search-strong"></i><span class="text">Rechercher</span></li>
+            <li><i class="ionicons ion-share"></i><span class="text">Partager</span></li>
+            <li class="show-start-menu"><i class="ionicons ion-social-windows"></i><span class="text">Accueil</span></li>
+            <li><i class="ionicons ion-ipad"></i><span class="text">Périphériques</span></li>
+            <li><i class="ionicons ion-gear-a"></i><span class="text">Paramètres</span></li>
+        </ul>
+
+        <div class="charms-info">
+            <div class="icon-set">
+                <p><i class="ionicons ion-connection-bars"></i></p>
+                <p><i class="ionicons ion-battery-half"></i></p>
+            </div>
+            <div class="date-time">
+                <p class="time"></p>
+                <p class="date"></p>
+            </div>
+        </div>
+        
+        <div class="charms-bar-activator-top desktop-element"></div>
+        <div class="charms-bar-activator-bottom desktop-element"></div>
+        
+        <!-- START MENU -->
+        <div class="start-menu">
+            <div class="info">
+                <h1>Acceuil</h1>
+                <div class="user">
+                    <img src="img/user.png" class="profile-pic">
+                    <h2>Wedone<br><span>Utilisateur</span></h2>
+                </div>
+                <ul class="user-menu-dropdown">
+                    <li class="disabled">Changer la la photo de profil</li>
+                    <li class="lock">Verrouiller</li>
+                    <li class="signout">Se déconnecter</li>
+                </ul>
+            </div>
+            <div class="metro-ui">
+                <ul class="metro-ui-grid grid-1">
+                    <li class="teal"><i class="ionicons ion-email"></i><span class="text">Mail</span></li>
+                    <li class="indigo"><i class="ionicons ion-calendar"></i><span class="text">Calendrier</span></li>
+                    <li class="small lighterBlue"><i class="ionicons ion-social-skype"></i><span class="text">Skype</span></li>
+                    <li class="small emerald"><i class="ionicons ion-android-playstore"></i><span class="text">Microsoft Store</span></li>
+                    <li class="orange"><i class="ionicons ion-android-contacts"></i><span class="text">People</span></li>
+                    <li class="amber"><i class="ionicons ion-ios-partlysunny"></i><span class="text">Météo</span></li>
+                    <li class="small darkViolet"><i class="ionicons ion-android-map"></i><span class="text">Cartes</span></li>
+                    <li class="small darkCyan"><i class="ionicons ion-cloud"></i><span class="text">OneDrive</span></li>
+                    <li class="violet"><i class="ionicons ion-chatbox-working"></i><span class="text">Messages</span></li>
+                    <li class="green"><i class="ionicons ion-arrow-graph-up-right"></i><span class="text">Finance</span></li>
+                    <li class="magenta"><i class="ionicons ion-ios-basketball"></i><span class="text">Sports</span></li>
+                    <li class="desktop-tile" id="show-desktop"><i class="ionicons"></i><span class="text">Bureau</span></li>
+                    <li class="darkCobalt"><i class="ionicons ion-image"></i><span class="text">Photos</span></li>
+                    <li class="red"><i class="ionicons ion-ios-pulse"></i><span class="text">Santé</span></li>
+                </ul>
+                <ul class="metro-ui-grid grid-2">
+                    <li class="pink"><i class="ionicons ion-search"></i><span class="text">Bing</span></li>
+                    <li class="teal"><i class="ionicons ion-bag"></i><span class="text">Voyages</span></li>
+                    <li class="small emerald"><i class="ionicons ion-ios-game-controller-b"></i><span class="text">Jeux</span></li>
+                    <li class="small violet"><i class="ionicons ion-camera"></i><span class="text">Caméra</span></li>
+                    <li class="small orange"><i class="ionicons ion-headphone"></i><span class="text">Musique</span></li>
+                    <li class="small crimson"><i class="ionicons ion-social-youtube-outline"></i><span class="text">Video</span></li>
+                </ul>
+                <ul class="metro-ui-grid grid-3">
+                    <li class="orange"><i class="ionicons ion-social-html5"></i><span class="text">HTML5</span></li>
+                    <li class="blue"><i class="ionicons ion-social-css3"></i><span class="text">CSS3</span></li>
+                    <li class="magenta"><i class="ionicons ion-social-sass"></i><span class="text">SASS/SCSS</span></li>
+                    <li class="red"><i class="ionicons ion-ios-infinite"></i><span class="text">normalize.css</span></li>
+                    <li class="violet"><i class="ionicons ion-social-javascript"></i><span class="text">JS/jQuery/jQuery UI</span></li>
+                    <li class="darkTeal"><i class="ionicons ion-android-apps"></i><span class="text">Ionicons</span></li>
+                    <li class="darkBlue"><img src="img/brackets.png" style="width: 12vh; height: 12vh; display: inline-block;"><span class="text">Adobe Brackets</span></li>
+                    <li class="teal"><i class="ionicons ion-code"></i><span class="text">Code</span></li>
+                    <li class="gray"><i class="ionicons ion-wrench"></i><span class="text">Front-End Tools</span></li>
+                    <li class="amber"><i class="ionicons ion-coffee"></i><span class="text">Coffee</span></li>
+                    <li class="loveRed"><i class="ionicons ion-android-favorite"></i><span class="text">Love</span></li>
+                </ul>
+            </div>
+            <div class="desktop-activator"><i class="ionicons ion-social-windows"></i></div>
+        </div>
+        
+        <!-- APPS -->
+        <div class="app about" id="about">
+            <div class="title">
+                <p>A propos de Windows 8.1 pour le Web</p>
+            </div>
+            <ul class="action-buttons">
+                <li class="close" title="Close"><i class="ionicons ion-android-close"></i></li>
+            </ul>
+            <div class="container">
+                <p class="head"><i class="ionicons ion-social-windows"></i> Windows 8.1 pour le Web</p>
+                <div class="divider"></div>
+                <p>Microsoft Windows 8.1 pour le Web</p>
+                <p>Version 1.1 (Build 9375.0.x86fre.fbl_partner_out14.130328-1742).5c84e0f17a41ff9e</p>
+                <p>&copy; 2022 Wedone. Tous droits réservés.</p>
+                <p>Le système d'exploitation Windows 8.1 et son interface utilisateur sont protégés par des marques et autres droits de propriété intellectuelle en instance ou existants aux États-Unis et dans d'autres pays/régions.</p>
+                <br>
+                <p>/!\ Fin de support le 10 Janvier 2022</p>
+                <br>
+                <p style="color: #f00;">L'utilisation ou la divulgation non autorisée de quelque manière que ce soit peut entraîner des mesures disciplinaires pouvant aller jusqu'au licenciement (dans le cas des employés), la résiliation de la mission ou du contrat (dans le cas du personnel occasionnel) et une éventuelle responsabilité pénale civile.</p>
+                <br>
+                <p>Ce produit est sous licence <span style="color: #00aff0; text-decoration: underline;">Microsoft Software License Terms</span> to:</p>
+                <br>
+                <button class="btn-ok">OK</button>
+            </div>
+        </div>
+        
+        <div class="app specifics inactive" id="specifics">
+            <div class="title">
+                <p>Spécificités du projet</p>
+            </div>
+            <ul class="action-buttons">
+                <li class="close" title="Close"><i class="ionicons ion-android-close"></i></li>
+                <li class="maximize" title="Maximize"><i class="ionicons ion-android-checkbox-outline-blank"></i></li>
+                <li class="minimize" title="Minimize"><i class="ionicons ion-ios-minus-empty"></i></li>
+            </ul>
+            <div class="container">
+                <p class="head"><i class="ionicons ion-settings"></i> Fonctionnalités</p>
+                <div class="divider"></div>
+                <p class="built" data-tooltip="Built with tools and love"><i class="ionicons ion-code"></i> <i class="ionicons ion-wrench"></i> <i class="ionicons ion-android-favorite" style="color: #ff0000;"></i>.</p>
+                <p>Construit à l'aide du cadre moderne HTML5, CSS3 et jQuery avec prise en charge de tous les navigateurs modernes, y compris Edge, Chrome, Firefox, ... (et Internet Explorer). Veuillez passer en mode plein écran pour une meilleure expérience.</p>
+                <h2><i class="ionicons ion-social-sass"></i> SASS Préprocesseur</h2>
+                <p>CSS3 a été codé via le préprocesseur CSS SASS. De plus, le projet comporte une utilisation intensive de CSS3 et de ses fonctionnalités. Vous trouverez des info-bulles CSS personnalisées, des menus contextuels modifiés, des transformations sympas, des transitions fluides et tout un tas de beaux composants.</p>
+                <h2><i class="ionicons ion-social-javascript"></i> jQuery complète la magie</h2>
+                <p>Utilisation de jQuery pour contrôler l'ensemble de la séquence et pour intégrer des fonctionnalités dans ce projet.</p>
+                <h2><i class="ionicons ion-arrow-move"></i> Faites glisser et déposer !</h2>
+                <p>Utilise le plug-in jQuery UI Draggable pour permettre le réarrangement des mosaïques de l'interface utilisateur métropolitaine et des icônes du bureau et pour faire glisser les applications de fenêtre.</p>
+                <h2><i class="ionicons ion-android-apps"></i> Icons lui donne vie !</h2>
+                <p>Toutes les icônes (à l'exception de l'icône Brackets) ont été servies à partir de la bibliothèque Ionicons.</p>
+                <h2><i class="ionicons ion-iphone"></i> Et les smartphones ?</h2>
+                <p>Tous les composants ont été soigneusement dimensionnés pour s'adapter à un environnement réactif. Par conséquent, Windows 8.1 pour le Web fonctionne aussi bien même lorsque vous effectuez un zoom avant ou même si vous visualisez ce projet sur votre smartphone ou votre tablette.</p>
+                <h2><i class="ionicons ion-load-c"></i> Ecran de démarrage</h2>
+                <p>Le Pacejs s'est intégré à l'écran de démarrage, de sorte que le processus de démarrage ne se termine qu'une fois que tout est chargé. Cela amène l'expérience utilisateur à de plus hauts sommets.</p>
+            </div>
+        </div>
+        
+        <div class="app copyright inactive" id="copyright">
+            <div class="title">
+                <p>Informations Copyright</p>
+            </div>
+            <ul class="action-buttons">
+                <li class="close" title="Close"><i class="ionicons ion-android-close"></i></li>
+            </ul>
+            <div class="container">
+                <p class="head"><i class="ionicons ion-ios-copy"></i> Informations Copyright</p>
+                <div class="divider"></div>
+                <p class="copyright" ><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Windows 8.1 pour le Web</span> fait par <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Wedone et basé sur un projet nommé Windows Web 8.0 crée par <br /> Kishlaya Jaiswal en 2015 (Wedone pour la traduction française et les améliorations de cette version)</span> <br /> est titulaire d'une licence en vertu d'une <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</p>
+                <p>&copy; Août 2022 Wedone. Tous droits réservés</p><br>
+            </div>
+        </div>
+        
+        <div class="app alert">
+           <div class="title">
+               <p>&nbsp;</p>
+           </div>
+            <ul class="action-buttons">
+                <li class="close" title="Close"><i class="ionicons ion-android-close"></i></li>
+            </ul>
+            <div class="container">
+                <p><i class="ionicons ion-alert"></i>   Cette application n'est actuellement pas accessible dans cette version.</p>
+                <br>
+                <button class="btn-ok">OK</button>
+            </div>
+        </div>
+        
+        <!-- CONTEXT MENU -->
+        <ul class="context-menu">
+           <li>
+               Affichage <i class="ionicons ion-android-arrow-dropright"></i>
+               <ul>
+                   <li id="largeIcons"><input type="radio"> Grandes icônes</li>
+                   <li id="mediumIcons"><input type="radio" checked> Icônes moyennes</li>
+                   <li id="smallIcons"><input type="radio"> Petites icônes</li>
+                   <li class="divider"></li>
+                   <li id="arrangeIcons"><input type="checkbox"> Réorganiser automatiquement les icônes</li>
+                   <li class="disabled">Aligner les icônes sur la grille</li>
+                   <li class="divider"></li>
+                   <li id="toggleIcons"><input type="checkbox" checked="true"> Afficher les éléments du bureau</li>
+               </ul>
+           </li>
+           <li>
+               Trier par <i class="ionicons ion-android-arrow-dropright"></i>
+               <ul>
+                   <li>Nom</li>
+                   <li>Taille</li>
+                   <li>Type de fichier</li>
+                   <li>Modifié le</li>
+               </ul>
+           </li>
+           <li>Actualiser</li>
+           <li class="divider"></li>
+           <li class="disabled">Coller</li>
+           <li class="disabled">Coller le raccourci</li>
+           <li class="divider"></li>
+           <li>
+               Nouveau <i class="ionicons ion-android-arrow-dropright"></i>
+               <ul>
+                   <li>Dossier</li>
+                   <li>Contact</li>
+                   <li class="divider"></li>
+                   <li>Contact</li>
+                   <li>Microsoft Word Document</li>
+                   <li>Journal Document</li>
+                   <li>Microsoft Powerpoint Presentation</li>
+                   <li>WinRAR Archive</li>
+                   <li>Text Document</li>
+                   <li>Microsoft Excel Worksheet</li>
+                   <li>WinRAR ZIP Archive</li>
+               </ul>
+           </li>
+           <li class="divider"></li>
+           <li>Résolution d'écran</li>
+           <li>Personaliser</li>
+       </ul>
+        
+        <!-- AUDIOS -->
+        <audio id="windows-boot-audio">
+            <source src="sounds/ootada.wav" type="audio/wav">
+        </audio>
+        <audio id="windows-logon-audio">
+           <source src="sounds/ooWindowsLogon.wav" type="audio/wav">
+       </audio>
+       <audio id="windows-logoff-audio">
+           <source src="sounds/ooWindowsLogoff.wav" type="audio/wav">
+       </audio>
+       <audio id="windows-shutdown-audio">
+           <source src="sounds/ooWindowsShutdown.wav" type="audio/wav">
+       </audio>
+       <audio id="windows-error-audio">
+           <source src="sounds/ooWindowsError.wav" type="audio/wav">
+       </audio>
+    </body>
+</html>
