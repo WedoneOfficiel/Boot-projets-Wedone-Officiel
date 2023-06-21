@@ -1,0 +1,73 @@
+<html>
+<head>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <title>Wedone To Do List</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        :root {
+            --bg-color: #333333;
+            --text-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            background-image: linear-gradient(to right, #bdbaba, #333);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .welcome-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px; 
+        }
+
+        .welcome-container p {
+            font-size: 18px;
+            color: #6d6c6c;
+        }
+
+        .welcome-container button {
+            height: 40px;
+            width: 200px;
+            border-radius: 20px;
+            border: none;
+            margin-top: 10px; 
+            background-image: linear-gradient(to right, #00c6ff, #0072ff);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wedone To Do List</h1>
+        <div class="welcome-container">
+            <p>Bienvenue sur Wedone To Do List, l'application qui vous aide à organiser vos tâches quotidiennes.</p>
+            <p><br>Indication : Une tâche s'ajoute dans un dossier. Vous devez donc au moins créer un dossier puis le sélectionner pour enfin ajouter une tâche. <br></p>
+            <button onclick="window.location.href='app.html'">Accéder à l'application</button>
+        </div>
+    </div>
+</body>
+</html>
