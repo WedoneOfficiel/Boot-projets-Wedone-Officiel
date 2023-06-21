@@ -2,7 +2,7 @@
 
 /* Set the background color to a gradient */
 body {
-  background: linear-gradient(to right, #000000, #6e6e6e);
+  background: #333333;
   font: Arial;
 }
 
