@@ -1,73 +1,18 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* This is a css file for the html code */
 
+/* Set the background color to a gradient */
 body {
-    background-color: black;
-    color: white;
-    font-family: calibri, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  background: linear-gradient(to right, #000000, #6e6e6e);
+  font: Arial;
 }
 
-h1{
-    align-items: center;
-}
-
-ol {
-    width: 300px;
-    list-style: none;
-}
-
-li{
-    color: white;
-}
-li:link{
-    color: white;
-}
-
-ol li {
-    font-size: 1.2rem;
-    padding: 20px 30px;
-    margin: 10px 0;
-    background: rgb(23, 23, 23);
-    z-index: 5;
-    position: relative;
-    cursor: pointer;
-    transition: all .4s;
-}
-ol li::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 5px;
-    height: 100%;
-    z-index: -1;
-    transition: all .4s;
-}
-ol li:hover::before {
-    width: 100%;
-}
-ol li:nth-child(1)::before {
-    background: #4285f4;
-}
-
-ol li:nth-child(2)::before {
-    background: #db4437;
-}
-
-ol li:nth-child(3)::before {
-    background: #f4b400;
-}
-
-ol li:nth-child(4)::before {
-    background: #0f9d58;
-}
-ol li:hover {
-    transform: translateX(20px);
+/* Center the buttons */
+button {
+  display: block;
+  margin: 20px auto;
+  width: 300px;
+  height: 80px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
 }
