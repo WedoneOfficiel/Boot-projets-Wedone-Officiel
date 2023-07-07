@@ -141,3 +141,7 @@ input[type=file] {
   .folder.selected {
       border:solid 3px #00c6ff; 
   }
+
+  a[rel="me"] {
+  display: none;
+}
