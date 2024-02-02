@@ -1,0 +1,16 @@
+{
+	"name": "Livres",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/liyasthomas/books.git"
+	},
+	"description": "Trouver des livres en utilisant la base de données du Google Play Bookss",
+	"author": "Wedone",
+	"version": "1.0",
+	"devDependencies": {
+		"jshint": "^2.10.2"
+	},
+	"scripts": {
+		"test": "jshint travis.js"
+	}
+}
