@@ -6,6 +6,6 @@ function checkRefresh()
 	}
 	else
 	{
-		window.location.href = "https://harry-hopkinson.github.io/BookFlix/";
+		window.location.href = "https://wedoneofficiel.github.io/Boot-projets-Wedone-Officiel/BookTime//";
 	}
 }
