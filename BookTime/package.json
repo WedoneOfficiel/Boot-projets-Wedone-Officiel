@@ -2,7 +2,7 @@
 	"name": "Livres",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/liyasthomas/books.git"
+		"url": "https://wedoneofficiel.github.io/Boot-projets-Wedone-Officiel/BookTime/"
 	},
 	"description": "Trouver des livres en utilisant la base de données du Google Play Bookss",
 	"author": "Wedone",
