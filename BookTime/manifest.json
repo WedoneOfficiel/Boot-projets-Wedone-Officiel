@@ -1,6 +1,6 @@
 {
-	"name": "Lires",
-	"short_name": "Livres",
+	"name": "BookTime",
+	"short_name": "BookTime",
 	"description": "Trouver des livres en utilisant la base de données du Google Play Books",
 	"icons": [
 		{
