@@ -18,5 +18,7 @@ button {
 }
 
 button:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+    /* background-color: rgb(0 0 0 / 80%); */
+    color: white;
+    background-image: linear-gradient(to right, #00c6ff, #0072ff);
 }
