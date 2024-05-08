@@ -3,12 +3,22 @@ body {
   background: #333333;
   font-family: Arial, sans-serif;
   color: #ffffff;
+  padding: 20px;
+}
+
+h2 {
+    color: #ccc;
+    text-align: center;
+}
+
+.category {
+    margin-bottom: 20px;
 }
 
 /* Center the buttons */
 button {
   display: block;
-  margin: 20px auto;
+  margin: 10px auto;
   width: 300px;
   height: 80px;
   font-size: 20px;
@@ -23,12 +33,11 @@ button:hover {
     background-color: #777; /* Lighter gray on hover for all buttons */
 }
 
-/* Specific hover styles for "Wedone To Do List" */
-button:nth-child(3):hover {
-    background-image: linear-gradient(to right, #00c6ff, #0072ff);
+/* Specific hover styles for "Wedone Web Apps" */
+.web-app:hover {
+    background-image: linear-gradient(to right, #00c6ff, #0072ff); /* Example gradient */
 }
 
-/* Specific hover styles for "Wedone QR Code" */
-button:nth-child(5):hover {
+button:nth-child(3).web-app:hover {
     background-image: linear-gradient(to right, #00ff88, #1ebd0f);
 }
