@@ -1,9 +1,8 @@
-/* This is a css file for the html code */
-
 /* Set the background color to a gradient */
 body {
   background: #333333;
-  font: Arial;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
 }
 
 /* Center the buttons */
@@ -15,10 +14,21 @@ button {
   font-size: 20px;
   border: none;
   border-radius: 10px;
+  background-color: #555; /* Default background color */
+  color: #fff; /* Default text color */
+  transition: background-color 0.3s, background-image 0.3s; /* Smooth transition for background properties */
 }
 
 button:hover {
-    /* background-color: rgb(0 0 0 / 80%); */
-    color: white;
+    background-color: #777; /* Lighter gray on hover for all buttons */
+}
+
+/* Specific hover styles for "Wedone To Do List" */
+button:nth-child(3):hover {
     background-image: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+/* Specific hover styles for "Wedone QR Code" */
+button:nth-child(5):hover {
+    background-image: linear-gradient(to right, #00ff88, #1ebd0f);
 }
