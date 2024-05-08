@@ -8,6 +8,6 @@ Le 8 mai 2024 aura marqué le Boot Projets. En effet, avec la sortie de Wedone Q
 <br>
 Enfin, les "Autres projets" (Windows 8.1 et BookTime) ne seront désormais plus supportés mais encore accessibles. 
 <br>
-En conclusion, ce répertoire servira majoritairement pour la gestion des mises à jour de Wedone Operate qui s'effectuent encore via cette url.
+En conclusion, ce répertoire servira majoritairement pour la gestion des mises à jour de Wedone Operate qui s'effectuent encore via cet url.
 <br>
 WedoneOfficiel - le 08/05/2024 à 16:40
